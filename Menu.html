@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Gestión del Menú</title>
+</head>
+
+<body>
+
+<header>
+<h1>Gestión del Menú</h1>
+<button onclick="location.href='panel-admin.html'">Volver</button>
+<button onclick="location.href='index.html'">Cerrar sesión</button>
+</header>
+
+<main>
+
+<!-- Formulario para agregar productos -->
+<section>
+
+<h2>Agregar Producto</h2>
+
+<form>
+
+<label>Nombre</label>
+<input type="text" placeholder="Ej: Pizza Muzzarella">
+
+<br><br>
+
+<label>Categoría</label>
+<select>
+<option>Pizza</option>
+<option>Bebida</option>
+</select>
+
+<br><br>
+
+<label>Precio</label>
+<input type="number" placeholder="Ej: 8500">
+
+<br><br>
+
+<button type="submit">Agregar</button>
+
+</form>
+
+</section>
+
+<hr>
+
+<!-- Tabla del menú -->
+<section>
+
+<h2>Menú Actual</h2>
+
+<table>
+
+<thead>
+<tr>
+<th>ID</th>
+<th>Producto</th>
+<th>Categoría</th>
+<th>Precio</th>
+<th>Acciones</th>
+</tr>
+</thead>
+
+<tbody>
+
+<tr>
+<td>1</td>
+<td>Pizza Muzzarella</td>
+<td>Pizza</td>
+<td>$8500</td>
+<td>
+<button>Editar</button>
+<button>Eliminar</button>
+</td>
+</tr>
+
+<tr>
+<td>2</td>
+<td>Coca Cola</td>
+<td>Bebida</td>
+<td>$2000</td>
+<td>
+<button>Editar</button>
+<button>Eliminar</button>
+</td>
+</tr>
+
+</tbody>
+
+</table>
+
+</section>
+
+</main>
+
+</body>
+</html>
