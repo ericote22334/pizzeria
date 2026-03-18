@@ -3,59 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <title>Panel de Administrador</title>
+    <link rel="stylesheet" href="Estilos/panel-admin.css">
 </head>
+
 <body>
 
 <header>
-    <h1>Panel Principal</h1>
+    <h1>Sistema de gestion de la pizzeria</h1>
 </header>
-<button onclick="location.href='index.html'">
-    Cerrar Sesión
-</button>
+
+<!-- BOTONES ARRIBA -->
+<div class="top-buttons">
+     <button onclick="location.href='index copy.html'" class="btn-cerrar">
+        Cerrar Sesión
+    </button>
+
+    <button onclick="abrirMenu()" class="btn-color">Color</button>
+
+    <div id="colores" class="colores">
+        <div class="c" onclick="cambiar('blue')" style="background:blue;"></div>
+        <div class="c" onclick="cambiar('red')" style="background:red;"></div>
+        <div class="c" onclick="cambiar('green')" style="background:green;"></div>
+        <div class="c" onclick="cambiar('orange')" style="background:orange;"></div>
+        <div class="c" onclick="cambiar('purple')" style="background:purple;"></div>
+        <div class="c" onclick="cambiar('pink')" style="background:pink;"></div>
+        <div class="c" onclick="cambiar('yellow')" style="background:yellow;"></div>
+        <div class="c" onclick="cambiar('brown')" style="background:brown;"></div>
+        <div class="c" onclick="cambiar('gray')" style="background:gray;"></div>
+        <div class="c" onclick="cambiar('black')" style="background:black;"></div>
+    </div>
+
+   
+</div>
+
 <main>
+
+    <!-- LOGO -->
+    <div class="logo-panel">
+        <img src="Captura de pantalla 2026-03-18 182924.png">
+    </div>
 
     <section class="dashboard">
 
-        <!-- Card Venta al Público -->
         <div class="card">
-            <h2>Venta al Público</h2>
-            <p>Acceder al sistema de ventas.</p>
-            <button onclick="location.href='venta_publico.html'">
-                Ir
-            </button>
+            <h2>Venta al publico💰</h2>
+            <p>Gestion de la venta al publico.</p>
+            <button onclick="location.href='venta_publico.html'">Ir</button>
         </div>
 
-        <!-- Card Personal -->
         <div class="card">
-            <h2>Personal</h2>
-            <p>Administrar empleados.</p>
-            <button onclick="location.href='personal.html'">
-                Ir
-            </button>
+            <h2>Personal👤</h2>
+            <p>Administracion de los empleados.</p>
+            <button onclick="location.href='personal.html'">Ir</button>
         </div>
 
-        <!-- Card Stock -->
         <div class="card">
-            <h2>Stock</h2>
-            <p>Gestionar inventario y productos.</p>
-            <button onclick="location.href='stock.html'">
-                Ir
-            </button>
+            <h2>Stock📦</h2>
+            <p>Gestion del stock.</p>
+            <button onclick="location.href='stock.html'">Ir</button>
         </div>
-        <div class="card">
-            <h2>Menu</h2>
-            <p>Gestionar el menú de productos.</p>
-            <button onclick="location.href='Menu.html'">
-                Ir
-            </button>
-        </div>
+
     </section>
 
 </main>
 
-<footer>
-    <p>Panel de Administración</p>
-</footer>
+
+<!-- JS -->
+<script>
+function abrirMenu(){
+let menu = document.getElementById("colores");
+
+if(menu.style.display == "block"){
+menu.style.display = "none";
+}else{
+menu.style.display = "block";
+}
+}
+
+function cambiar(color){
+document.body.style.background = color;
+}
+</script>
 
 </body>
 </html>

@@ -1,0 +1,109 @@
+body{
+background:white;
+font-family:Arial;
+margin:0;
+text-align:center;
+}
+
+/* HEADER */
+header{
+background:black;
+color:white;
+padding:20px;
+}
+
+/* BOTONES ARRIBA */
+/* CONTENEDOR BOTONES */
+.top-buttons{
+position:absolute;
+top:20px;
+right:20px;
+display:flex;
+flex-direction:column; /* uno abajo del otro */
+align-items:flex-end;
+gap:5px; /* espacio entre botones */
+}
+
+/* BOTON COLOR */
+.btn-color{
+background:white;
+border:1px solid gray;
+padding:8px 12px;
+cursor:pointer;
+margin-right:5px;
+}
+
+/* BOTON CERRAR */
+.btn-cerrar{
+background:#333;
+color:white;
+border:none;
+padding:10px 15px;
+cursor:pointer;
+}
+
+/* MENU COLORES */
+.colores{
+display:none;
+position:absolute;
+top:40px;
+right:80px;
+background:white;
+border:1px solid gray;
+padding:10px;
+width:120px;
+box-shadow:0 0 5px rgba(0,0,0,0.3);
+}
+
+/* CUADRADOS */
+.c{
+width:20px;
+height:20px;
+display:inline-block;
+margin:3px;
+cursor:pointer;
+}
+
+/* LOGO */
+.logo-panel{
+margin:20px 0;
+}
+
+.logo-panel img{
+width:220px;
+}
+
+/* DASHBOARD */
+.dashboard{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+}
+
+/* CARDS */
+.card{
+background:white;
+border:3px solid black;
+width:220px;
+padding:20px;
+}
+
+/* BOTONES CARDS */
+.card button{
+background:#333;
+color:white;
+border:none;
+padding:10px;
+width:70%;
+cursor:pointer;
+margin-top:10px;
+}
+
+/* FOOTER */
+footer{
+margin-top:40px;
+padding:10px;
+background:black;
+color:white;
+}
