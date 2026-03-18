@@ -3,13 +3,22 @@
 <head>
 <meta charset="UTF-8">
 <title>Stock - Pizzería</title>
+<link rel="stylesheet" href="Estilos/stock.css">
 </head>
+
 <body>
 
 <header>
+
+<img src="Captura de pantalla 2026-03-18 182924.png" class="logo">
+
 <h1>Gestión de Stock</h1>
-<button onclick="location.href='panel-admin.html'">Volver</button>
-<button onclick="location.href='index.html'">Cerrar sesión</button>
+
+<div class="top-buttons">
+<button onclick="location.href='panel-admin.html'" class="btn-volver">Volver</button>
+<button onclick="location.href='index.html'" class="btn-cerrar">Cerrar sesión</button>
+</div>
+
 </header>
 
 <main>
@@ -17,19 +26,19 @@
 <section class="dashboard">
 
 <div class="card">
-<h2>Agregar Producto</h2>
+<h2>📦 Agregar Producto</h2>
 <p>Registrar nuevo ingrediente o producto.</p>
 <button>Agregar</button>
 </div>
 
 <div class="card">
-<h2>Inventario</h2>
+<h2>📋 Inventario</h2>
 <p>Ver productos disponibles.</p>
 <button>Ver stock</button>
 </div>
 
 <div class="card">
-<h2>Actualizar Stock</h2>
+<h2>🔄 Actualizar Stock</h2>
 <p>Modificar cantidades.</p>
 <button>Actualizar</button>
 </div>

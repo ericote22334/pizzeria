@@ -1,0 +1,87 @@
+body{
+background:#e6e6e6;
+font-family:Arial;
+margin:0;
+text-align:center;
+}
+
+/* HEADER */
+header{
+background:black;
+color:white;
+padding:15px 20px;
+position:relative;
+display:flex;
+align-items:center;
+}
+
+/* LOGO */
+.logo{
+width:60px;
+}
+
+/* TITULO CENTRADO */
+header h1{
+position:absolute;
+left:50%;
+transform:translateX(-50%);
+margin:0;
+}
+
+/* BOTONES ARRIBA DERECHA */
+.top-buttons{
+position:absolute;
+right:20px;
+top:15px;
+}
+
+/* BOTON VOLVER */
+.btn-volver{
+background:white;
+border:1px solid gray;
+padding:8px 12px;
+cursor:pointer;
+margin-right:5px;
+}
+
+/* BOTON CERRAR */
+.btn-cerrar{
+background:#333;
+color:white;
+border:none;
+padding:8px 12px;
+cursor:pointer;
+}
+
+/* DASHBOARD */
+.dashboard{
+display:flex;
+justify-content:center;
+gap:20px;
+margin-top:40px;
+flex-wrap:wrap;
+}
+
+/* CARDS */
+.card{
+background:white;
+border:3px solid black;
+width:220px;
+padding:20px;
+}
+
+/* TITULOS */
+.card h2{
+margin-top:0;
+}
+
+/* BOTONES */
+.card button{
+background:#333;
+color:white;
+border:none;
+padding:10px;
+width:70%;
+cursor:pointer;
+margin-top:10px;
+}
