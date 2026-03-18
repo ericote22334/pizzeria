@@ -1,0 +1,128 @@
+body{
+background:#e6e6e6;
+font-family:Arial;
+margin:0;
+text-align:center;
+}
+
+/* HEADER */
+header{
+background:black;
+color:white;
+padding:15px 20px;
+position:relative; 
+display:flex;
+align-items:center;
+}
+
+/* LOGO IZQUIERDA */
+.logo{
+width:60px;
+}
+
+/* TITULO CENTRADO REAL */
+header h1{
+position:absolute;
+left:50%;
+transform:translateX(-50%);
+margin:0;
+}
+
+/* BOTONES ARRIBA */
+.top-buttons{
+position:absolute;
+top:20px;
+right:20px;
+}
+
+.btn-volver{
+background:white;
+border:1px solid gray;
+padding:8px 12px;
+cursor:pointer;
+margin-right:5px;
+}
+
+.btn-cerrar{
+background:#333;
+color:white;
+border:none;
+padding:8px 12px;
+cursor:pointer;
+}
+
+/* SECCIONES */
+.form-section, .tabla-section{
+background:white;
+border:3px solid black;
+width:500px;
+margin:30px auto;
+padding:20px;
+}
+
+/* FORM */
+form{
+display:flex;
+flex-direction:column;
+align-items:center;
+}
+
+label{
+align-self:flex-start;
+margin-left:5%;
+margin-top:10px;
+}
+
+input, select{
+width:90%;
+padding:10px;
+margin-top:5px;
+border:1px solid gray;
+}
+
+/* BOTON AGREGAR */
+form button{
+background:#333;
+color:white;
+border:none;
+padding:10px;
+width:50%;
+margin-top:15px;
+cursor:pointer;
+}
+
+/* TABLA */
+table{
+width:100%;
+border-collapse:collapse;
+margin-top:15px;
+}
+
+th{
+background:black;
+color:white;
+padding:10px;
+}
+
+td{
+border:1px solid gray;
+padding:10px;
+}
+
+/* BOTONES TABLA */
+.btn-edit{
+background:gray;
+color:white;
+border:none;
+padding:5px 10px;
+cursor:pointer;
+}
+
+.btn-delete{
+background:black;
+color:white;
+border:none;
+padding:5px 10px;
+cursor:pointer;
+margin-left:5px;
+}

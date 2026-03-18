@@ -3,20 +3,27 @@
 <head>
 <meta charset="UTF-8">
 <title>Gestión del Menú</title>
+<link rel="stylesheet" href="Estilos/menu.css">
 </head>
 
 <body>
 
 <header>
+        <img src="Captura de pantalla 2026-03-18 182924.png" class="logo">
+
 <h1>Gestión del Menú</h1>
-<button onclick="location.href='panel-admin.html'">Volver</button>
-<button onclick="location.href='index.html'">Cerrar sesión</button>
+
+<div class="top-buttons">
+<button onclick="location.href='panel-admin.html'" class="btn-volver">Volver</button>
+<button onclick="location.href='index.html'" class="btn-cerrar">Cerrar sesión</button>
+</div>
+
 </header>
 
 <main>
 
-<!-- Formulario para agregar productos -->
-<section>
+<!-- FORMULARIO -->
+<section class="form-section">
 
 <h2>Agregar Producto</h2>
 
@@ -25,20 +32,14 @@
 <label>Nombre</label>
 <input type="text" placeholder="Ej: Pizza Muzzarella">
 
-<br><br>
-
 <label>Categoría</label>
 <select>
 <option>Pizza</option>
 <option>Bebida</option>
 </select>
 
-<br><br>
-
 <label>Precio</label>
 <input type="number" placeholder="Ej: 8500">
-
-<br><br>
 
 <button type="submit">Agregar</button>
 
@@ -46,10 +47,8 @@
 
 </section>
 
-<hr>
-
-<!-- Tabla del menú -->
-<section>
+<!-- TABLA -->
+<section class="tabla-section">
 
 <h2>Menú Actual</h2>
 
@@ -73,8 +72,8 @@
 <td>Pizza</td>
 <td>$8500</td>
 <td>
-<button>Editar</button>
-<button>Eliminar</button>
+<button class="btn-edit">Editar</button>
+<button class="btn-delete">Eliminar</button>
 </td>
 </tr>
 
@@ -84,8 +83,8 @@
 <td>Bebida</td>
 <td>$2000</td>
 <td>
-<button>Editar</button>
-<button>Eliminar</button>
+<button class="btn-edit">Editar</button>
+<button class="btn-delete">Eliminar</button>
 </td>
 </tr>
 
