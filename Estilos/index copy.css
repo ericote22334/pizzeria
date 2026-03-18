@@ -1,0 +1,87 @@
+body{
+background:#e6e6e6;
+font-family:Arial;
+text-align:center;
+}
+
+/* TITULO */
+#titulo-inicio-sesion{
+background:black;
+color:white;
+padding:15px;
+width:415px;
+margin:50px auto 0 auto;
+}
+
+/* FORM */
+form{
+width:400px;
+margin:0 auto;
+background:white;
+border:3px solid black;
+padding:30px 20px;
+position:relative; /* IMPORTANTE */
+}
+
+/* ===== BOTON COLOR ===== */
+.menu-color{
+position:absolute;
+top:10px;
+right:10px;
+}
+
+/* BOTON */
+.btn-color{
+background:white;
+border:1px solid gray;
+padding:5px 10px;
+cursor:pointer;
+}
+
+/* MENU DESPLEGABLE */
+.colores{
+display:none;
+position:absolute;
+top:35px;
+right:0;
+background:white;
+border:1px solid gray;
+padding:10px;
+width:120px;
+box-shadow:0 0 5px rgba(0,0,0,0.3);
+}
+
+/* CUADRADOS DE COLORES */
+.c{
+width:20px;
+height:20px;
+display:inline-block;
+margin:3px;
+cursor:pointer;
+}
+
+/* LOGO */
+.logo{
+width:150px;
+display:block;
+margin:10px auto 20px auto;
+}
+
+/* INPUTS */
+input{
+width:90%;
+padding:10px;
+margin:10px 0;
+border:1px solid gray;
+}
+
+/* BOTON LOGIN */
+button[type="submit"]{
+background:#333;
+color:white;
+border:none;
+padding:12px;
+width:60%;
+cursor:pointer;
+margin-top:10px;
+}

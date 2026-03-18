@@ -1,16 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>inicio de sesion</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inicio de sesión</title>
+<link rel="stylesheet" href="Estilos/index copy.css">
 </head>
+
 <body>
-    <h1 id="titulo-inicio-sesion">INICIAR SESION</h1>
-    <form method="POST">
-        <input name="usuario" placeholder="Usuario" required>
-        <input name="contrasena" type="password" placeholder="Contraseña" required>
-        <button type="submit">Acceder</button>
-    </form>
+
+<h2 id="titulo-inicio-sesion">Inicio de sesion superadmin</h2>
+
+<form method="POST">
+
+    <!-- BOTON COLOR DENTRO -->
+    <div class="menu-color">
+        <button type="button" onclick="abrirMenu()" class="btn-color">Color</button>
+
+        <div id="colores" class="colores">
+            <div class="c" onclick="cambiar('blue')" style="background:blue;"></div>
+            <div class="c" onclick="cambiar('red')" style="background:red;"></div>
+            <div class="c" onclick="cambiar('green')" style="background:green;"></div>
+            <div class="c" onclick="cambiar('orange')" style="background:orange;"></div>
+            <div class="c" onclick="cambiar('purple')" style="background:purple;"></div>
+            <div class="c" onclick="cambiar('pink')" style="background:pink;"></div>
+            <div class="c" onclick="cambiar('yellow')" style="background:yellow;"></div>
+            <div class="c" onclick="cambiar('brown')" style="background:brown;"></div>
+            <div class="c" onclick="cambiar('gray')" style="background:gray;"></div>
+            <div class="c" onclick="cambiar('black')" style="background:black;"></div>
+        </div>
+    </div>
+
+    <img src="Captura de pantalla 2026-03-18 182924.png" class="logo">
+
+    <input name="usuario" placeholder="Usuario" required>
+    <input name="contrasena" type="password" placeholder="Contraseña" required>
+
+    <p class="olvido">¿Olvidó su contraseña?</p>
+
+    <button type="submit">Acceder</button>
+
+</form>
+
+<script>
+function abrirMenu(){
+let menu = document.getElementById("colores");
+
+if(menu.style.display == "block"){
+menu.style.display = "none";
+}else{
+menu.style.display = "block";
+}
+}
+
+function cambiar(color){
+document.body.style.background = color;
+}
+</script>
+
 </body>
 </html>
