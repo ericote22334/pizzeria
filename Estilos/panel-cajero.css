@@ -84,7 +84,6 @@ li {
     width: 100%;
 }
 
-/* SCROLL SI SE LLENA */
 .menu, .pedido {
     max-height: calc(100vh - 70px);
     overflow-y: auto;
