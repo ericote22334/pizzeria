@@ -1,0 +1,119 @@
+body{
+background:#e6e6e6;
+font-family:Arial;
+margin:0;
+}
+
+/* HEADER */
+.header{
+background:black;
+color:white;
+padding:15px;
+text-align:center;
+position:relative;
+font-size:20px;
+}
+.logo{
+width:60px;           
+position:absolute;
+left:15px;            
+top:50%;
+transform:translateY(-50%);
+}
+
+/* BOTONES ARRIBA DERECHA */
+.top-buttons{
+position:absolute;
+right:20px;
+top:10px;
+}
+
+.btn-cerrar{
+background:#333;
+color:white;
+border:none;
+padding:8px 12px;
+cursor:pointer;
+margin-right:5px;
+}
+
+.btn-volver{
+background:white;
+border:1px solid gray;
+padding:8px 12px;
+cursor:pointer;
+}
+
+/* CONTENEDOR */
+.container{
+display:flex;
+padding:20px;
+gap:20px;
+}
+
+/* MENU (IZQUIERDA) */
+.menu{
+width:50%;
+}
+
+/* PEDIDO (DERECHA) */
+.pedido{
+width:50%;
+border-left:3px solid black;
+padding-left:20px;
+}
+
+/* TITULOS */
+h2{
+margin-top:0;
+}
+
+/* ITEMS MENU */
+.pizza{
+background:white;
+border:2px solid black;
+padding:12px;
+margin-bottom:10px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+/* BOTONES AGREGAR */
+.pizza button{
+background:#333;
+color:white;
+border:none;
+padding:6px 12px;
+cursor:pointer;
+}
+
+/* LISTA PEDIDO */
+#listaPedido{
+list-style:none;
+padding:0;
+margin:10px 0;
+}
+
+#listaPedido li{
+background:white;
+border:1px solid gray;
+padding:8px;
+margin-bottom:5px;
+}
+
+/* TOTAL */
+.total{
+font-size:18px;
+margin:15px 0;
+}
+
+/* BOTON LIMPIAR */
+.pedido button{
+width:100%;
+background:#333;
+color:white;
+border:none;
+padding:10px;
+cursor:pointer;
+}
