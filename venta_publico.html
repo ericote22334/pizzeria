@@ -1,11 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>venta al publico</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Panel de Cajero - Pizzería</title>
+
+<link rel="stylesheet" href="Estilos/panel-cajero.css">
 </head>
+
 <body>
+
+<header class="header">
+    🍕 Pizzería - Panel de Cajero
+
+    <div class="top-buttons">
+        <button onclick="location.href='index copy.html'" class="btn-cerrar">Cerrar sesión </button>
+    <button onclick="location.href='panel-admin.html'" class="btn-volver">Volver</button>
+    </div>
+</header>
+
+<div class="container">
     
+    <div class="menu">
+        <h2>Menú</h2>
+
+        <div class="pizza">
+            <span>Muzzarella - $5000</span>
+            <button onclick="agregar('Muzzarella', 5000)">Agregar</button>
+        </div>
+
+        <div class="pizza">
+            <span>Napolitana - $6000</span>
+            <button onclick="agregar('Napolitana', 6000)">Agregar</button>
+        </div>
+
+        <div class="pizza">
+            <span>Fugazzeta - $6500</span>
+            <button onclick="agregar('Fugazzeta', 6500)">Agregar</button>
+        </div>
+
+        <div class="pizza">
+            <span>Calabresa - $7000</span>
+            <button onclick="agregar('Calabresa', 7000)">Agregar</button>
+        </div>
+
+    </div>
+
+    <div class="pedido">
+        <h2>Pedido</h2>
+        <ul id="listaPedido"></ul>
+
+        <div class="total">
+            Total: $<span id="total">0</span>
+        </div>
+
+        <button onclick="limpiar()">Limpiar pedido</button>
+    </div>
+
+</div>
+
+<script>
+    let total = 0;
+
+    function agregar(nombre, precio) {
+        const lista = document.getElementById("listaPedido");
+
+        const item = document.createElement("li");
+        item.textContent = `${nombre} - $${precio}`;
+        lista.appendChild(item);
+
+        total += precio;
+        document.getElementById("total").textContent = total;
+    }
+
+    function limpiar() {
+        document.getElementById("listaPedido").innerHTML = "";
+        total = 0;
+        document.getElementById("total").textContent = total;
+    }
+</script>
+
 </body>
 </html>

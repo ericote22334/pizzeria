@@ -1,0 +1,91 @@
+ body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    margin: 0;
+    display: flex;
+}
+
+/* HEADER */
+.header {
+    background: black;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 24px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+/* CONTENEDOR */
+.container {
+    display: flex;
+    margin-top: 70px;
+    width: 100%;
+}
+
+/* MENU Y PEDIDO */
+.menu, .pedido {
+    padding: 20px;
+    width: 50%;
+    background: white;
+}
+
+/* BORDE DIVISOR */
+.menu {
+    border-right: 3px solid black;
+}
+
+/* ITEMS */
+.pizza {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    padding: 10px;
+    background: white;
+    border: 2px solid black;
+}
+
+/* BOTONES */
+button {
+    background-color: #333;
+    color: white;
+    border: 1px solid gray;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+/* HOVER */
+button:hover {
+    background-color: black;
+}
+
+/* LISTA */
+ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+li {
+    margin: 5px 0;
+}
+
+/* TOTAL */
+.total {
+    font-size: 20px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* BOTON LIMPIAR */
+.pedido button {
+    margin-top: 10px;
+    width: 100%;
+}
+
+/* SCROLL SI SE LLENA */
+.menu, .pedido {
+    max-height: calc(100vh - 70px);
+    overflow-y: auto;
+}
