@@ -2,11 +2,6 @@
 session_start();
 include("conexion.php");
 
-if (!isset($_SESSION['id_sucursal'])) {
-    header("Location: seleccionar_sucursal.php");
-    exit();
-}
-
 $id_sucursal = $_SESSION['id_sucursal'];
 
 // AGREGAR PRODUCTO
@@ -20,7 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     mysqli_query($conexion, $sql);
 
-    header("Location: ../agregar-producto.html");
+    header("Location: ../agregar-producto.php");
     exit();
 }
 ?>

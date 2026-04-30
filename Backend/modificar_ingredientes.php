@@ -2,11 +2,6 @@
 session_start();
 include("conexion.php");
 
-if (!isset($_SESSION['id_sucursal'])) {
-    header("Location: ../seleccionar_sucursal.php");
-    exit();
-}
-
 $id_sucursal = $_SESSION['id_sucursal'];
 
 // ACTUALIZAR

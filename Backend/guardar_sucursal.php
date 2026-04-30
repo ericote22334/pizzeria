@@ -9,3 +9,4 @@ if ($_SESSION['rol'] == 'admin') {
 } else {
     header("Location: ../panel-cajero.php");
 }
+?>

@@ -15,9 +15,39 @@ session_start();
     <h1>Sistema de gestion de la pizzeria</h1>
 </header>
 
-<!-- Mostrar sucursal actual-->
 <?php
 include("Backend/conexion.php");
+
+$id_usuario = $_SESSION['user_id'];
+$rol = $_SESSION['rol'];
+
+// Si es superadmin → ver todas
+if ($rol == 'admin') {
+    $sql = "SELECT * FROM sucursales";
+} else {
+    $sql = "SELECT s.* FROM sucursales s
+            INNER JOIN usuario_sucursal us ON s.id_sucursal = us.id_sucursal
+            WHERE us.id_usuario = $id_usuario";
+}
+
+$resultado = mysqli_query($conexion, $sql);
+?>
+
+<form method="POST" action="Backend/guardar_sucursal.php">
+    <select name="sucursal">
+        <?php while($fila = mysqli_fetch_assoc($resultado)) { ?>
+            <option value="<?php echo $fila['id_sucursal']; ?>">
+                <?php echo $fila['nombre']; ?>
+            </option>
+        <?php } ?>
+    </select>
+
+    <button type="submit">Entrar</button>
+</form>
+
+
+<!-- Mostrar sucursal actual-->
+<?php
 
 $id_sucursal = $_SESSION['id_sucursal'];
 $sql = "SELECT nombre FROM sucursales WHERE id_sucursal = $id_sucursal";
@@ -88,9 +118,6 @@ $sucursal = mysqli_fetch_assoc($res);
         
       
     </section>
-<button onclick="location.href='Backend/seleccionar_sucursal.php'" class="btn-cambiar">
-    Cambiar Sucursal
-</button>
 </main>
 
 
