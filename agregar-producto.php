@@ -19,7 +19,7 @@ $resultado = mysqli_query($conexion, $sql);
 </head>
 <body>
 
-<a href="panel-admin.php"><button>⬅ Volver</button></a>
+<a href="panel-admin.php" class="btn-volver">⬅ Volver</a>
 
 <h2>Agregar Producto</h2>
 

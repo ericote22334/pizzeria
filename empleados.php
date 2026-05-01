@@ -42,8 +42,7 @@ $sucursales = mysqli_query($conexion, $sqlSuc);
 
 <h1>Gestión de Empleados</h1>
 
-<a href="panel-admin.php">🔙 Volver</a>
-
+<a href="panel-admin.php" class="btn-volver">🔙 Volver</a>
 <!-- 🔎 FILTRO POR SUCURSAL -->
 <form method="GET">
     <select name="sucursal">

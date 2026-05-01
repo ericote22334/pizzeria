@@ -1,5 +1,9 @@
 /* RESET */
-* { box-sizing: border-box; margin: 0; padding: 0; }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 /* BODY */
 body {
@@ -17,31 +21,33 @@ body {
 h1 {
   font-size: 24px;
   font-weight: 600;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   text-align: center;
 }
 
-/* BOTON VOLVER */
-a {
-  margin-bottom: 20px;
-  text-decoration: none;
+/* 🔥 BOTON VOLVER (SOLO ESTE) */
+.btn-volver {
+  position: fixed;
+  top: 20px;
   left: 20px;
-}
+  z-index: 1000;
 
-a button {
+  text-decoration: none;
+  background: #fff;
   padding: 8px 16px;
   border-radius: 8px;
   border: 1px solid #ccc;
-  background: #fff;
-  cursor: pointer;
+  color: #000;
+  font-size: 14px;
+
   transition: 0.2s;
 }
 
-a button:hover {
+.btn-volver:hover {
   background: #eaeaea;
 }
 
-/* FORM (MEJORADO) */
+/* FORM */
 form {
   background: #ffffff;
   padding: 25px;
@@ -69,7 +75,7 @@ input:focus, select:focus {
   box-shadow: 0 0 0 2px rgba(0,0,0,0.05);
 }
 
-/* BOTON PRINCIPAL */
+/* BOTON FORM */
 form button {
   width: 100%;
   padding: 10px;
@@ -94,7 +100,7 @@ hr {
   border-top: 1px solid #ddd;
 }
 
-/* TABLA (MEJORADA) */
+/* TABLA */
 table {
   width: 900px;
   max-width: 100%;
@@ -122,12 +128,17 @@ td {
   text-align: center;
 }
 
-/* FILAS HOVER */
+/* HOVER */
 tr:hover td {
   background: #f9f9f9;
 }
 
 /* BOTONES TABLA */
+td a {
+  text-decoration: none;
+  margin: 0 4px;
+}
+
 td button {
   padding: 6px 12px;
   border-radius: 6px;
