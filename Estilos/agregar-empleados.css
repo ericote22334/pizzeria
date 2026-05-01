@@ -1,110 +1,157 @@
-  * { box-sizing: border-box; margin: 0; padding: 0; }
- 
-    body {
-      font-family: sans-serif;
-      background: #f4f4f4;
-      color: #1a1a1a;
-      padding: 2rem;
-    }
- 
-    h1 {
-      font-size: 20px;
-      font-weight: 500;
-      margin-bottom: 0.5rem;
-    }
- 
-    .nav {
-      display: flex;
-      gap: 8px;
-      margin-bottom: 1.5rem;
-    }
- 
-    .nav a {
-      text-decoration: none;
-      padding: 8px 16px;
-      border-radius: 8px;
-      font-size: 13px;
-      border: 1px solid #ccc;
-      color: #1a1a1a;
-      background: #fff;
-    }
- 
-    .nav a:hover { background: #f0f0f0; }
-    .nav a.active { background: #1a1a1a; color: #fff; border-color: #1a1a1a; font-weight: 500; }
- 
-    .card {
-      background: #fff;
-      border: 1px solid #e0e0e0;
-      border-radius: 12px;
-      padding: 1.25rem;
-      max-width: 480px;
-    }
- 
-    .card-title {
-      font-size: 16px;
-      font-weight: 500;
-      margin-bottom: 1.25rem;
-      padding-bottom: 12px;
-      border-bottom: 1px solid #e0e0e0;
-    }
- 
-    .form-group { margin-bottom: 1rem; }
- 
-    label {
-      display: block;
-      font-size: 13px;
-      color: #666;
-      margin-bottom: 6px;
-    }
- 
-    input[type="text"],
-    input[type="password"],
-    select {
-      width: 100%;
-      padding: 8px 10px;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      font-size: 14px;
-      font-family: sans-serif;
-      background: #fff;
-      color: #1a1a1a;
-      outline: none;
-      transition: border-color 0.15s;
-    }
- 
-    input:focus, select:focus {
-      border-color: #888;
-      box-shadow: 0 0 0 3px rgba(0,0,0,0.06);
-    }
- 
-    .form-row {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 12px;
-    }
- 
-    .btn {
-      padding: 8px 16px;
-      border-radius: 8px;
-      font-size: 13px;
-      cursor: pointer;
-      font-family: sans-serif;
-      transition: all 0.15s;
-    }
- 
-    .btn-primary {
-      background: #1a1a1a;
-      color: #fff;
-      border: none;
-      font-weight: 500;
-    }
- 
-    .btn-primary:hover { opacity: 0.85; }
- 
-    .btn-secondary {
-      background: none;
-      border: 1px solid #ccc;
-      color: #1a1a1a;
-    }
- 
-    .btn-secondary:hover { background: #f0f0f0; }
+/* RESET */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+/* BODY */
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f4f6f8;
+  color: #1a1a1a;
+  padding: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* TITULO */
+h1 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* BOTON VOLVER */
+a {
+  margin-bottom: 20px;
+  text-decoration: none;
+  left: 20px;
+}
+
+a button {
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background: #fff;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+a button:hover {
+  background: #eaeaea;
+}
+
+/* FORM (MEJORADO) */
+form {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 420px;
+
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  margin-bottom: 30px;
+}
+
+/* INPUTS */
+input, select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+input:focus, select:focus {
+  border-color: #333;
+  box-shadow: 0 0 0 2px rgba(0,0,0,0.05);
+}
+
+/* BOTON PRINCIPAL */
+form button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  background: #1a1a1a;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+form button:hover {
+  background: #000;
+}
+
+/* SEPARADOR */
+hr {
+  width: 80%;
+  margin: 25px 0;
+  border: none;
+  border-top: 1px solid #ddd;
+}
+
+/* TABLA (MEJORADA) */
+table {
+  width: 900px;
+  max-width: 100%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* HEADER */
+th {
+  background: #1a1a1a;
+  color: #fff;
+  padding: 12px;
+  font-size: 14px;
+}
+
+/* FILAS */
+td {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+  text-align: center;
+}
+
+/* FILAS HOVER */
+tr:hover td {
+  background: #f9f9f9;
+}
+
+/* BOTONES TABLA */
+td button {
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-size: 13px;
+  transition: 0.2s;
+}
+
+/* EDITAR */
+td a:first-child button {
+  background: #dcdcdc;
+}
+
+td a:first-child button:hover {
+  background: #cfcfcf;
+}
+
+/* ELIMINAR */
+td a:last-child button {
+  background: #1a1a1a;
+  color: #fff;
+}
+
+td a:last-child button:hover {
+  background: #000;
+}
