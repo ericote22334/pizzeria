@@ -31,7 +31,12 @@ $sql = "SELECT * FROM menu
 $resultado = mysqli_query($conexion, $sql);
 $row = mysqli_fetch_assoc($resultado);
 ?>
-
+<link rel="stylesheet" href="../Estilos/modificar-menu.css"></head>
+<div class="volver">
+    <a href="../Menu.php">
+        <button>⬅ Volver</button>
+    </a>
+</div>
 <h2>Editar Producto</h2>
 
 <form method="POST">

@@ -1,0 +1,110 @@
+/* RESET */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* BODY CENTRADO */
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f4f6f8;
+  color: #1a1a1a;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 100vh;
+}
+
+/* BOTON VOLVER (FIJO ARRIBA IZQUIERDA) */
+.volver {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+}
+
+.volver a {
+  text-decoration: none;
+}
+
+.volver button {
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background: #fff;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.volver button:hover {
+  background: #eaeaea;
+}
+
+/* TITULO */
+h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/* FORM CARD */
+form {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+
+  width: 100%;
+  max-width: 420px;
+
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+}
+
+/* LABELS */
+label {
+  font-size: 13px;
+  color: #555;
+  margin-bottom: 5px;
+  display: block;
+}
+
+/* INPUTS */
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+
+  transition: 0.2s;
+}
+
+input:focus,
+select:focus {
+  border-color: #333;
+  box-shadow: 0 0 0 2px rgba(0,0,0,0.05);
+}
+
+/* BOTON */
+button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+
+  background: #1a1a1a;
+  color: #fff;
+  font-weight: 500;
+
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button[type="submit"]:hover {
+  background: #000;
+}
