@@ -1,5 +1,9 @@
 <?php
 session_start();
+if (!isset($_SESSION['id_sucursal'])) {
+    header("Location: seleccionar_sucursal.php");
+    exit();
+}
 ?>
 
 <!DOCTYPE html>
@@ -95,7 +99,7 @@ $sucursal = mysqli_fetch_assoc($res);
         <div class="card">
             <h2>Venta al publico💰</h2>
             <p>Gestion de la venta al publico.</p>
-            <button onclick="location.href='venta_publico.html'">Ir</button>
+            <button onclick="location.href='panel-cajero.php'">Ir</button>
         </div>
 
         <div class="card">
@@ -113,7 +117,7 @@ $sucursal = mysqli_fetch_assoc($res);
          <div class="card">
             <h2>Menu📦</h2>
             <p>Gestion del stock.</p>
-            <button onclick="location.href='Menu.html'">Ir</button>
+            <button onclick="location.href='Menu.php'">Ir</button>
         
         
       
