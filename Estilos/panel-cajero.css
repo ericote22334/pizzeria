@@ -1,61 +1,107 @@
- body {
+/* BODY */
+body {
     font-family: Arial, sans-serif;
-    background-color: white;
+    background-color: #f4f6f8;
     margin: 0;
     display: flex;
 }
 
-/* HEADER */
+/* HEADER (NO tocamos tu centrado) */
 .header {
     background: black;
     color: white;
     padding: 15px;
-    text-align: center;
+    text-align: center; /* 👈 queda centrado como querías */
     font-size: 24px;
     width: 100%;
     position: fixed;
     top: 0;
+
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+/* 👉 BOTONES A LA DERECHA */
+.top-buttons {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+/* BOTONES HEADER */
+.top-buttons button {
+    background-color: #222;
+    border: 1px solid #555;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 13px;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.top-buttons button:hover {
+    background-color: #000;
 }
 
 /* CONTENEDOR */
 .container {
     display: flex;
-    margin-top: 70px;
+    margin-top: 80px;
     width: 100%;
+    gap: 20px;
+    padding: 20px;
 }
 
-/* MENU Y PEDIDO */
+/* MENU Y PEDIDO (MEJORADOS) */
 .menu, .pedido {
     padding: 20px;
     width: 50%;
     background: white;
+
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
-/* BORDE DIVISOR */
+/* BORDE MÁS SUAVE */
 .menu {
-    border-right: 3px solid black;
+    border-right: 2px solid #eee;
 }
 
 /* ITEMS */
 .pizza {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+
     margin: 10px 0;
-    padding: 10px;
-    background: white;
-    border: 2px solid black;
+    padding: 12px;
+
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+
+    transition: 0.2s;
+}
+
+.pizza:hover {
+    background: #f9f9f9;
+    transform: scale(1.01);
 }
 
 /* BOTONES */
 button {
-    background-color: #333;
+    background-color: #1a1a1a;
     color: white;
-    border: 1px solid gray;
-    padding: 5px 10px;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
     cursor: pointer;
+    transition: 0.2s;
 }
 
-/* HOVER */
 button:hover {
     background-color: black;
 }
@@ -69,6 +115,8 @@ ul {
 
 li {
     margin: 5px 0;
+    padding: 5px;
+    border-bottom: 1px solid #eee;
 }
 
 /* TOTAL */
@@ -78,13 +126,16 @@ li {
     font-weight: bold;
 }
 
-/* BOTON LIMPIAR */
+/* BOTONES PEDIDO */
 .pedido button {
     margin-top: 10px;
     width: 100%;
+    padding: 10px;
+    border-radius: 8px;
 }
 
+/* SCROLL */
 .menu, .pedido {
-    max-height: calc(100vh - 70px);
+    max-height: calc(100vh - 100px);
     overflow-y: auto;
 }
