@@ -1,110 +1,195 @@
+/* ===========================
+   BASE
+=========================== */
+*, *::before, *::after{
+  box-sizing:border-box;
+}
+
 body{
-background:white;
-font-family:Arial;
-margin:0;
-text-align:center;
+  background:white;
+  font-family:Arial;
+  margin:0;
+  text-align:center;
 }
 
-/* HEADER */
+/* ===========================
+   HEADER
+=========================== */
 header{
-background:black;
-color:white;
-padding:20px;
+  background:black;
+  color:white;
+  padding:20px;
+  position:relative;
+  min-height:130px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
 }
 
-/* BOTONES ARRIBA */
-/* CONTENEDOR BOTONES */
+header h1{
+  margin:0;
+  font-size:clamp(1.5rem,3vw,2.2rem);
+}
+
+/* BOTONES DERECHA */
 .top-buttons{
-position:absolute;
-top:20px;
-right:20px;
-display:flex;
-flex-direction:column; /* uno abajo del otro */
-align-items:flex-end;
-gap:5px; /* espacio entre botones */
+  position:absolute;
+  top:20px;
+  right:20px;
+  display:flex;
+  flex-direction:column;
+  align-items:flex-end;
+  gap:5px;
 }
 
-/* BOTON COLOR */
 .btn-color{
-background:#333;
-color: white;
-border:1px solid gray;
-padding:8px 12px;
-cursor:pointer;
-margin-right:5px;
+  background:#333;
+  color:white;
+  border:1px solid gray;
+  padding:8px 12px;
+  cursor:pointer;
 }
 
-/* BOTON CERRAR */
 .btn-cerrar{
-background:#333;
-color:white;
-border:none;
-padding:10px 15px;
-cursor:pointer;
+  background:#333;
+  color:white;
+  border:none;
+  padding:10px 15px;
+  cursor:pointer;
 }
 
 /* MENU COLORES */
 .colores{
-display:none;
-position:absolute;
-top:40px;
-right:80px;
-background:white;
-border:1px solid gray;
-padding:10px;
-width:120px;
-box-shadow:0 0 5px rgba(0,0,0,0.3);
+  display:none;
+  position:absolute;
+  top:40px;
+  right:80px;
+  background:white;
+  border:1px solid gray;
+  padding:10px;
+  width:120px;
+  box-shadow:0 0 5px rgba(0,0,0,0.3);
+  z-index:100;
 }
 
 /* CUADRADOS */
 .c{
-width:20px;
-height:20px;
-display:inline-block;
-margin:3px;
-cursor:pointer;
+  width:20px;
+  height:20px;
+  display:inline-block;
+  margin:3px;
+  cursor:pointer;
 }
 
-/* LOGO */
+/* ===========================
+   LOGO
+=========================== */
 .logo-panel{
-margin:20px 0;
+  margin:20px 0;
 }
 
 .logo-panel img{
-width:220px;
+  width:220px;
+  max-width:100%;
 }
 
-/* DASHBOARD */
+/* ===========================
+   DASHBOARD
+=========================== */
 .dashboard{
-display:flex;
-justify-content:center;
-gap:20px;
-flex-wrap:wrap;
+  display:flex;
+  justify-content:center;
+  gap:24px;
+  flex-wrap:wrap;
+  padding:20px;
 }
 
-/* CARDS */
+/* ===========================
+   CARDS
+=========================== */
 .card{
-background:white;
-border:3px solid black;
-width:220px;
-padding:20px;
+  background:white;
+  border:3px solid black;
+  width:280px;   /* QUEDAN ANCHAS COMO LA FOTO */
+  min-height:240px;
+  padding:25px;
 }
 
-/* BOTONES CARDS */
 .card button{
-background:#333;
-color:white;
-border:none;
-padding:10px;
-width:70%;
-cursor:pointer;
-margin-top:10px;
+  background:#333;
+  color:white;
+  border:none;
+  padding:12px;
+  width:70%;
+  cursor:pointer;
+  margin-top:15px;
 }
 
-/* FOOTER */
+/* ===========================
+   FOOTER
+=========================== */
 footer{
-margin-top:40px;
-padding:10px;
-background:black;
-color:white;
+  margin-top:40px;
+  padding:10px;
+  background:black;
+  color:white;
+}
+
+/* ===========================
+   TABLET
+=========================== */
+@media (max-width:992px){
+
+  .card{
+    width:280px;
+  }
+
+  header{
+    min-height:120px;
+  }
+}
+
+/* ===========================
+   MOVIL
+=========================== */
+@media (max-width:600px){
+
+  header{
+    min-height:160px;
+    padding-top:70px;
+  }
+
+  .top-buttons{
+    top:10px;
+    right:10px;
+  }
+
+  .btn-color,
+  .btn-cerrar{
+    padding:6px 10px;
+    font-size:0.8rem;
+  }
+
+  .logo-panel img{
+    width:160px;
+  }
+
+  .dashboard{
+    flex-direction:column;
+    align-items:center;
+  }
+
+  .card{
+    width:90%;
+    max-width:320px;
+  }
+
+  .card button{
+    width:100%;
+  }
+
+  .colores{
+    right:10px;
+    top:55px;
+  }
 }
