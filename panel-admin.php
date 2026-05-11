@@ -37,8 +37,9 @@ if ($rol == 'admin') {
 $resultado = mysqli_query($conexion, $sql);
 ?>
 
-<form method="POST" action="Backend/guardar_sucursal.php">
-    <select name="sucursal">
+<form method="POST" action="Backend/guardar_sucursal.php" class="sucursal-form">
+    
+    <select name="sucursal" class="sucursal-select">
         <?php while($fila = mysqli_fetch_assoc($resultado)) { ?>
             <option value="<?php echo $fila['id_sucursal']; ?>">
                 <?php echo $fila['nombre']; ?>
@@ -46,9 +47,9 @@ $resultado = mysqli_query($conexion, $sql);
         <?php } ?>
     </select>
 
-    <button type="submit">Entrar</button>
-</form>
+    <button type="submit" class="sucursal-btn">Entrar</button>
 
+</form>
 
 <!-- Mostrar sucursal actual-->
 <?php

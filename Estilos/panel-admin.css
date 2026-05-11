@@ -42,12 +42,49 @@ header h1{
   gap:5px;
 }
 
+/* FORMULARIO DERECHA (debajo de los botones) */
+.sucursal-form{
+  position:absolute;
+  top:110px; /* debajo de Color y Cerrar sesión */
+  right:8px;
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  gap:5px;
+  margin-top:-18px; /* sube todo */
+}
+
+.sucursal-select{
+  background:#333;
+  color:white;
+  padding:10px;
+  border:none;
+  border-radius:8px;
+  font-size:14px;
+  cursor:pointer;
+}
+
+.sucursal-btn{
+  background:white;
+  color:black;
+  border:none;
+  padding:10px 20px;
+  border-radius:8px;
+  cursor:pointer;
+  font-size:14px;
+  transition:0.3s;
+}
+
+.sucursal-btn:hover{
+  background:#555;
+}
 .btn-color{
   background:#333;
   color:white;
-  border:1px solid gray;
+  border:none;
   padding:8px 12px;
   cursor:pointer;
+  margin-top:-2px;
 }
 
 .btn-cerrar{
@@ -56,6 +93,7 @@ header h1{
   border:none;
   padding:10px 15px;
   cursor:pointer;
+  margin-top:-5px;
 }
 
 /* MENU COLORES */
