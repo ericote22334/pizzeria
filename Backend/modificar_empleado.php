@@ -39,7 +39,7 @@ $sucursales = mysqli_query($conexion, "SELECT * FROM sucursales");
 <head>
 <meta charset="UTF-8">
 <title>Editar Empleado</title>
-<a href="../empleados.php" class="btn-volver">🔙 Volver</a>
+<a href="../empleados.php" class="btn-volver">⬅ Volver</a>
 
 <style>
 body {
