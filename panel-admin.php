@@ -66,7 +66,7 @@ $sucursal = mysqli_fetch_assoc($res);
 
 <!-- BOTONES ARRIBA -->
 <div class="top-buttons">
-     <button onclick="location.href='index copy.html'" class="btn-cerrar">
+     <button onclick="location.href='index.html'" class="btn-cerrar">
         Cerrar Sesión
     </button>
 

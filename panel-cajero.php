@@ -60,7 +60,7 @@ $resultado = mysqli_query($conexion, $sql);
             </button>
         <?php } ?>
 
-        <button onclick="location.href='Index copy.html'" class="btn-cerrar">
+        <button onclick="location.href='Index.html'" class="btn-cerrar">
             Cerrar sesión
         </button>
     </div>

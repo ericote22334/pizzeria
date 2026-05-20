@@ -85,3 +85,42 @@ width:60%;
 cursor:pointer;
 margin-top:10px;
 }
+#inicio-sesion{
+    width: 100%;
+    max-width: 320px;
+    margin: 20px auto;
+    padding: 18px;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+#inicio-sesion > p{
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 12px;
+    color: #222;
+}
+
+#inicio-sesion div p{
+    margin: 6px 0;
+    font-size: 0.95rem;
+    color: #555;
+}
+
+@media (max-width: 480px){
+    #inicio-sesion{
+        max-width: 90%;
+        padding: 15px;
+    }
+
+    #inicio-sesion > p{
+        font-size: 0.95rem;
+    }
+
+    #inicio-sesion div p{
+        font-size: 0.9rem;
+    }
+}
